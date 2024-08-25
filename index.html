@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="display-container">
+            <input type="text" id="display" readonly>
+            <button onclick="clearDisplay()" id="c">C</button>
+        </div>
+        <div class="button-row">
+            <button onclick="add('(')" id="add">(</button>
+            <button onclick="add(')')" id="add">)</button>
+            <button onclick="add('**')" id="add">^</button>
+            <button onclick="add('%')" id="add">%</button>
+        </div>
+        <div class="button-row">
+            <button onclick="add('7')" id="bt">7</button>
+            <button onclick="add('8')" id="bt">8</button>
+            <button onclick="add('9')" id="bt">9</button>
+            <button onclick="add('/')" id="add">÷</button>
+        </div>
+        <div class="button-row">
+            <button onclick="add('4')" id="bt">4</button>
+            <button onclick="add('5')" id="bt">5</button>
+            <button onclick="add('6')" id="bt">6</button>
+            <button onclick="add('*')" id="add">×</button>
+        </div>
+        <div class="button-row">
+            <button onclick="add('1')" id="bt">1</button>
+            <button onclick="add('2')" id="bt">2</button>
+            <button onclick="add('3')" id="bt">3</button>
+            <button onclick="add('-')" id="add">-</button>
+        </div>
+        <div class="button-row">
+            <button onclick="add('0')" id="bt">0</button>
+            <button onclick="add('.')" id="bt">.</button>
+            <button onclick="equal_to()" id="equal_to">=</button>
+            <button onclick="add('+')" id="add">+</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
